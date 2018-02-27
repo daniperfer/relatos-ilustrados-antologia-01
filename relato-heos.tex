@@ -1,0 +1,19 @@
+\newcommand{\heostitle}{Relato de Adrián}
+\renewcommand{\leftmark}{\heostitle}
+
+\thispagestyle{empty}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\figw]{ilustra/ImageNot.png}
+	\begin{center}
+	\caption*{\label{fig:Heos} \textbf{\heostitle} \\ \emph{Autor/a de la ilustración}: ? \\ \emph{Autor del relato}: Adrián}
+	\end{center}
+	\addcontentsline{lof}{figure}{\heostitle\vspace{10pt}}
+\end{figure}
+\cleardoublepage
+
+\chapter*{\heostitle}
+\addcontentsline{toc}{chapter}{\heostitle}
+\lipsum[1-10]
+
+\cleardoublepage

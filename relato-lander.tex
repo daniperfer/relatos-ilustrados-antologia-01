@@ -1,0 +1,33 @@
+\newcommand{\landertitle}{Lander}
+\renewcommand{\leftmark}{\landertitle}
+
+\thispagestyle{empty}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\figw]{ilustra/lander.eps}
+	\begin{center}
+	\caption*{\label{fig:Lander} \textbf{\landertitle} \\ \emph{Autor de la ilustración}: Manuel \\ \emph{Autor del relato}: Manuel}
+	\end{center}
+	\addcontentsline{lof}{figure}{\landertitle\vspace{10pt}}
+\end{figure}
+\cleardoublepage
+
+\chapter*{\landertitle}
+\addcontentsline{toc}{chapter}{\landertitle}
+
+\begin{center}
+\noindent{\large I}
+\end{center}
+\input{lander01}
+
+\begin{center}
+\noindent{\large II}
+\end{center}
+\input{lander02}
+
+\begin{center}
+\noindent{\large III}
+\end{center}
+\input{lander03}
+
+\cleardoublepage

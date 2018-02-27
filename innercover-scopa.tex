@@ -1,0 +1,23 @@
+%----------------------------------------------------------------------------------------
+%	INNER TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty} % Suppress page numbering
+\ThisCenterWallPaper{0.90}{ilustra/scopa.jpg} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
+
+\begin{tikzpicture}[remember picture,overlay]
+
+%\node[anchor=east, color=white, xshift=10cm, yshift=-0.5cm, text width=3cm, font=\sffamily\scriptsize]{Ciencia Ficción}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+
+\node[anchor=east, color=black, xshift=5.6cm, yshift=2.5cm, text width=6cm, font=\sffamily\bfseries\scshape\Large]{\scopatitle}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+
+\node[anchor=east, color=black, xshift=10.6cm, yshift=2cm, text width=3cm, font=\sffamily\bfseries]{Ariadna}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+
+\addcontentsline{lof}{figure}{\metatitle\vspace{10pt}}
+\end{tikzpicture}
+
+\newpage % Make sure the following content is on a new page
+\thispagestyle{empty} % Suppress page numbering
+\mbox{ }
+
+\newpage
