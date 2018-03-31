@@ -1,8 +1,8 @@
 % universal settings
-\documentclass[a5paper,11pt,twoside,onecolumn,openright,extrafontsizes]{memoir}
+\documentclass[a5paper,10pt,twoside,onecolumn,openright,extrafontsizes]{memoir}
 \usepackage[utf8x]{inputenc} % Required for inputting international characters
 %\usepackage[latin1]{inputenc}
-%\usepackage[spanish]{babel}
+\usepackage[spanish]{babel}
 %\usepackage{amsfonts}
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage[osf]{Alegreya,AlegreyaSans}
@@ -145,6 +145,14 @@
 \renewcommand{\printtoctitle}{\centering\Huge}
 \renewcommand{\cftdot}{}
 \renewcommand\listfigurename{\normalfont\scshape Índice de Ilustraciones\vspace{10pt}}
+\addto\captionsspanish{% Replace "spanish" with the language you use
+  \renewcommand{\contentsname}%
+    {\normalfont\scshape Índice de Relatos}%
+}
+\addto\captionsspanish{% Replace "spanish" with the language you use
+  \renewcommand{\listfigurename}%
+    {\centering\normalfont\scshape Índice de Ilustraciones\vspace{10pt}}%
+}
 
 % dialogue dashes
 \def\reply{\par---}
@@ -152,7 +160,6 @@
 \def\pauseend{---}
 
 %\usepackage{hyphenat}
-\hyphenation{Deu-ca-li\'on pe-rro pe-rros}
 
 % layout check and fix
 \checkandfixthelayout
@@ -176,7 +183,7 @@
 
 % dedication
 \begin{center}
-\itshape{\noindent{<Dedicatorias>}}
+\itshape{\noindent{¿Hay dedicatorias?}}
 \end{center}
 \input{explain}
 
