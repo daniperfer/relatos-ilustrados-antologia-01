@@ -7,11 +7,9 @@
 
 \begin{tikzpicture}[remember picture,overlay]
 
-%\node[anchor=east, color=white, xshift=10cm, yshift=-0.5cm, text width=3cm, font=\sffamily\scriptsize]{Ciencia Ficción}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+\node[color=white, text width=6cm, font=\sffamily\bfseries\scshape\LARGE](title) at (10cm,2.5cm){\metatitle};
 
-\node[anchor=east, color=white, xshift=10.6cm, yshift=2.5cm, text width=3cm, font=\sffamily\bfseries\scshape\Large]{\metatitle}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
-
-\node[anchor=east, color=white, xshift=10.6cm, yshift=2cm, text width=3cm, font=\sffamily\bfseries]{Ruymán}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+\node[color=white, text width=6cm, font=\sffamily\bfseries\Large](author) at (10cm,2cm){Ruymán};
 
 \addcontentsline{lof}{figure}{\metatitle\vspace{10pt}}
 \end{tikzpicture}
