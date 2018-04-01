@@ -1,0 +1,21 @@
+%----------------------------------------------------------------------------------------
+%	INNER TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty} % Suppress page numbering
+\ThisCenterWallPaper{1.0}{ilustra/no-leas-grey.png} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
+
+\begin{tikzpicture}[remember picture,overlay]
+
+\node[color=white, text width=6cm, font=\sffamily\bfseries\scshape\LARGE](title) at (10.5cm,0.5cm){\heostitle};
+
+\node[color=white, text width=6cm, font=\sffamily\bfseries\Large](author) at (10.5cm,0cm){\adrian};
+
+\addcontentsline{lof}{figure}{\heostitle, por \rosana\vspace{10pt}}
+\end{tikzpicture}
+
+\newpage % Make sure the following content is on a new page
+\thispagestyle{empty} % Suppress page numbering
+\mbox{ }
+
+\newpage
