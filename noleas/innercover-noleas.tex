@@ -5,14 +5,24 @@
 \thispagestyle{empty} % Suppress page numbering
 \ThisCenterWallPaper{1.0}{ilustra/no-leas-grey.png} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
 
-\begin{tikzpicture}[remember picture,overlay]
+\begin{figure}[b]
+\centering
 
-\node[color=white, text width=6cm, font=\sffamily\bfseries\scshape\LARGE](title) at (10.5cm,1.5cm){\heostitle};
+\begin{tikzpicture}
 
-\node[color=white, text width=6cm, font=\sffamily\bfseries\Large](author) at (10.5cm,1cm){\adrian};
+\node[color=black, font=\sffamily\bfseries\scshape\LARGE](title0) at (0.00cm,0.00cm){\heostitle};
+\node[color=white, font=\sffamily\bfseries\scshape\LARGE](title1) at (0.02cm,-0.02cm){\heostitle};
 
-\addcontentsline{lof}{figure}{\heostitle, por \rosana\vspace{10pt}}
+\node[color=black, font=\sffamily\bfseries\Large](author0) at (0.00cm,-0.75cm){\adrian};
+\node[color=white, font=\sffamily\bfseries\Large](author1) at (0.02cm,-0.77cm){\adrian};
+
+\node[color=black, font=\sffamily\bfseries\Large](ilust0) at (0.00cm,-1.25cm){Ilustración de \rosana};
+\node[color=white, font=\sffamily\bfseries\Large](ilust1) at (0.02cm,-1.27cm){Ilustración de \rosana};
+
+\addcontentsline{lof}{figure}{\heostitle, por \emph{\rosana}\vspace{10pt}}
 \end{tikzpicture}
+\vspace{5.00cm}
+\end{figure}
 
 \newpage % Make sure the following content is on a new page
 \thispagestyle{empty} % Suppress page numbering
