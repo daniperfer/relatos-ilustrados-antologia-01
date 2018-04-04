@@ -5,14 +5,19 @@
 \thispagestyle{empty} % Suppress page numbering
 \ThisCenterWallPaper{0.90}{ilustra/lander.eps} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
 
+\begin{figure}[t]
+\centering
+
 \begin{tikzpicture}[remember picture,overlay]
 
-\node[color=black, text width=6cm, font=\sffamily\bfseries\scshape\LARGE](title) at (10.5cm,0.5cm){\landertitle};
+\node[color=black, font=\sffamily\bfseries\scshape\LARGE](title) at (0.0cm,-0.25cm){\landertitle};
 
-\node[color=black, text width=6cm, font=\sffamily\bfseries\Large](author) at (10.5cm,0cm){\manuel};
+\node[color=black, font=\sffamily\bfseries\Large](author) at (0.02cm,-1.02cm){\manuel};
 
 \addcontentsline{lof}{figure}{\landertitle\vspace{10pt}}
 \end{tikzpicture}
+
+\end{figure}
 
 \newpage % Make sure the following content is on a new page
 \thispagestyle{empty} % Suppress page numbering
